@@ -1,0 +1,161 @@
+/* DEV BY VITOR HENRI */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* definindo tamanho do corpo inteiro do site */
+.container-principal{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cinza);
+}
+/* inicio header */
+.header{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    position: relative;
+}
+
+/* container do barra */
+.barra-fav{
+    width: 100%;
+    height: 20%;
+    /* linha preta que cortar o header */
+    border-bottom: 2px solid var(--preto);
+    display: flex;
+    align-items: center;
+}
+
+.text-fav{
+    color: var(--ciano);
+    margin-left: 20px;
+}
+
+.logo-setting{ 
+    position: absolute;
+    top: 42%;
+    left: 96.9vw;
+}
+
+/* fim header */
+
+/* inicio main */
+
+    /* logo e wordmark */
+.logo-and-wordmark{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    top: 10vh;
+    gap: 15px;
+}
+
+.logo-firefox{
+    width: 70px;
+    height: 70px;
+}
+
+.wordmark{
+    width: 100px;
+    height: 25px;
+    filter: invert(50%);
+}
+    /* fim logo and wordmark */
+
+    /* barra search */
+.container-search{
+    background-color: var(--cinza-claro);
+    width: 700px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    top: 125px;
+    left: 450px;
+}
+
+.search-google{
+    position: absolute;
+    left: 50px;
+    width: 50%;
+    color: var(--branco);
+    opacity: 60%;
+}
+
+.logo-google{
+    position: absolute;
+    left: 13px;
+    bottom: 12px;
+    width: 25px;
+    height: 25px;
+}
+    /* fim barra search */
+
+    /* apps */
+
+.badges-apps{
+    width: 900px;
+    height: 100px;
+    display: flex;
+    position: relative;
+    left: 350px;
+    top: 175px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.badge{
+    position: relative;
+    background-color: var(--cinza-claro);
+    border-radius: 10px;
+    border-style: none;
+    width: 45%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge:hover{
+    cursor: pointer;
+    /* delay para a animação do botao aumentar */
+    transition: transform 0.2s; 
+    /* Aumenta o botão depois que o mouse passar encima */
+    transform: scale(1.1); 
+    /* Muda a cor depois que o cabra aumentar */
+    background-color: var(--branco); 
+    /* so para o branco nao ficar muito forte */
+    opacity: 70%;
+}
+
+.nome-app{
+    position: absolute;
+    color: var(--branco);
+    top: 100%;
+    left: 35px;
+}
+
+.logo-app{
+    width: 70%;
+    height: 70%;
+    background-color: var(--cinza);
+    border-radius: 10px;
+}
+
+/* fim main */
+
+/* footer */
+
+.rodape{
+    color: var(--branco);
+    position: absolute;
+    top: 95%;
+    margin-left: 43.55%;
+}
